@@ -1,0 +1,80 @@
+﻿@model TbItem
+<div class="app-content content">
+    <div class="content-overlay"></div>
+    <div class="header-navbar-shadow"></div>
+    <div class="content-wrapper">
+        <section id="basic-vertical-layouts">
+            <div class="row match-height">
+                <div class="col-md-12 col-12">
+                    <div class="card" style="height: 501.406px;">
+                        <div class="card-header">
+                            <h4 class="card-title">Add New Item</h4>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-body">
+                                <form class="form form-vertical" method="post" role="form" novalidate asp-controller="Item" asp-action="Save" enctype="multipart/form-data">
+                                    <input type="hidden" asp-for="ItemId"  />
+                                    <div class="form-body">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="first-name-vertical">Item Name</label>
+                                                    <input type="text" asp-for="ItemName" class="form-control" placeholder="First Name">
+                                                    <span asp-validation-for="ItemName"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="email-id-vertical">SalesPrice</label>
+                                                    <input type="number" asp-for="SalesPrice" class="form-control" placeholder="SalesPrice">
+                                                    <span asp-validation-for="SalesPrice"></span>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="contact-info-vertical">PurchasePrice</label>
+                                                    <input type="number" asp-for="PurchasePrice" class="form-control" placeholder="PurchasePrice">
+                                                    <span asp-validation-for="PurchasePrice"></span>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="contact-info-vertical">Quantity</label>
+                                                    <input type="number" asp-for="Quantity" class="form-control" placeholder="Quantity">
+                                                    <span asp-validation-for="Quantity"></span>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="contact-info-vertical">Category</label>
+                                                    <select class="form-control" asp-for="CategoryId" asp-items="@(new SelectList(ViewBag.Category,"CategoryId","CategoryName"))"  >
+                                                    </select>
+                                                    <span asp-validation-for="CategoryId"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="contact-info-vertical">Item Image</label>
+                                                    <input type="file" name="Files" class="form-control">
+                                                   
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="submit" class="btn btn-primary mr-1 mb-1 waves-effect waves-light">Submit</button>
+                                                <button type="reset" class="btn btn-outline-warning mr-1 mb-1 waves-effect waves-light">Reset</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</div>

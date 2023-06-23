@@ -1,0 +1,48 @@
+﻿@model UserModel
+<div class="breadcrumb-section breadcrumb-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 text-center">
+                <div class="breadcrumb-text">
+                    <p>Fresh and Organic</p>
+                    <h1>Login</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="site-section">
+    <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center">
+            <div class="col-md-5 mb-5">
+                <h3 class="mb-5">Login</h3>
+                <form asp-action="Loginwith" asp-controller="User" method="post" role="form" class="bg-white">
+
+                    <div class="">
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <input type="hidden" asp-for="Returnurl" />
+                                <label for="c_uname" class="text-black">Username <span class="text-danger">*</span></label>
+                                <input type="text" asp-for="Email" class="form-control" >
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <label for="c_password" class="text-black">Password <span class="text-danger">*</span></label>
+                                <input type="password" asp-for="Password" class="form-control" >
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-lg-12">
+                                <input type="submit" class="btn btn-primary btn-lg" value="Login">
+                                <a asp-action="LogOut">LogOut</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

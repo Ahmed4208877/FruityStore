@@ -1,0 +1,40 @@
+[
+  {
+    "outputFileName": "wwwroot/css/style.min.css",
+    "inputFiles": [
+      "https://fonts.googleapis.com/css?family=Open+Sans:300,400,700",
+      "https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap",
+      "wwwroot/assets/css/all.min.css",
+      "wwwroot/assets/bootstrap/css/bootstrap.min.css",
+      "wwwroot/assets/css/owl.carousel.css",
+      "wwwroot/assets/css/magnific-popup.css",
+      "wwwroot/assets/css/animate.css",
+      "wwwroot/assets/css/meanmenu.min.css",
+      "wwwroot/assets/css/main.css",
+      "wwwroot/assets/css/responsive.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/site.min.js",
+    "inputFiles": [
+      "wwwroot/assets/js/jquery-1.11.3.min.js",
+      "wwwroot/assets/bootstrap/js/bootstrap.min.js",
+      "wwwroot/assets/js/jquery.countdown.js",
+      "wwwroot/assets/js/jquery.isotope-3.0.6.min.js",
+      "wwwroot/assets/js/waypoints.js",
+      "wwwroot/assets/js/owl.carousel.min.js",
+      "wwwroot/assets/js/jquery.magnific-popup.min.js",
+      "wwwroot/assets/js/jquery.meanmenu.min.js",
+      "wwwroot/assets/js/sticker.js",
+      "wwwroot/assets/js/main.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  }
+  
+
+
+] 

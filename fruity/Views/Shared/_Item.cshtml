@@ -1,0 +1,11 @@
+﻿@model TbItem
+<div class="col-lg-4 col-md-6 text-center">
+    <div class="single-product-item">
+        <div class="product-image">
+            <a asp-controller="Items" asp-action="Details" asp-route-Id="@Model.ItemId"> <img src="@string.Format("/Images/{0}",@Model.ImageName)" alt=""></a>
+        </div>
+        <h3>@Model.ItemName</h3>
+        <p class="product-price"><span>Per Kg</span> @Model.SalesPrice$ </p>
+        <a asp-controller="Items" asp-action="AddToCart" asp-route-id="@Model.ItemId" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+    </div>
+</div>
